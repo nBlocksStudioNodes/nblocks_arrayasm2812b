@@ -2,7 +2,7 @@
 
 
 
-nBlock_ArrayAsm2812B::nBlock_Array2812B(PinName MOSI, uint32_t numberLEDs):
+nBlock_ArrayAsm2812B::nBlock_ArrayAsm2812B(PinName MOSI, uint32_t numberLEDs):
 	_led_array(MOSI, numberLEDs) {
 	
 	// Number of LEDs to be used
