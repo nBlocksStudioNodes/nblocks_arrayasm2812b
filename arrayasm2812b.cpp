@@ -14,12 +14,12 @@ nBlock_ArrayAsm2812B::nBlock_ArrayAsm2812B(PinName MOSI, uint32_t numberLEDs):
 }
 
 
-void nBlock_ArrayAsm2812B::triggerInput(uint32_t inputNumber, uint32_t value){
+void nBlock_ArrayAsm2812B::triggerInput(nBlocks_Message message){
 	// input 0 receives an array of bytes
-	if (inputNumber == 0) {
+	if (message.inputNumber == 0) {
 		// Copy values to internal array
 		uint8_t * source_values;
-		source_values = ((uint8_t *)value);
+		source_values = ((uint8_t *)message.pointerValue);
 		// Temp variable to hold 0xRRGGBB value
 		uint8_t r;
 		uint8_t g;
