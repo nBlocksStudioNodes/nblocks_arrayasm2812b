@@ -1,0 +1,27 @@
+{
+	"category": "Hardware", 
+	"inputs": 1, 
+	"name": "ArrayAsm2812B", 
+	"parameters": [
+		{
+			"default": "P0_18", 
+			"type": "raw", 
+			"name": "MOSI", 
+			"value": "P0_18", 
+			"options": [
+				""
+			]
+		}
+	], 
+	"outputs": 0, 
+	"labels": {
+		"input": [], 
+		"output": []
+	}, 
+	"schematic_pins": {
+		"inputs": [1], 
+		"outputs": []
+	}, 
+	"repository": "https://github.com/nBlocksStudioNodes/nblocks_arrayasm2812b", 
+	"revision": ""
+}
